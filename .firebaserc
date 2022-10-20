@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "bowoot-be754",
+    "staging": "bowoot-test"
+  }
+}

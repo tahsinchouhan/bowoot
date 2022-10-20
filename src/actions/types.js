@@ -1,0 +1,65 @@
+export const ADD_USER = "ADD_USER";
+export const ADD_REGISTERUSER = "ADD_REGISTERUSER";
+export const PICKSERVICES = "PICKSERVICES";
+
+// export const ADD_SERVICE = "ADD_SERVICE";
+
+export const GET_USER_LOGIN = "GET_USER_LOGIN";
+
+export const ADD_DIETPLAN = "ADD_DIETPLAN";
+
+export const ADD_FITNESSPLAN = "ADD_FITNESSPLAN";
+export const ADD_TRAINER = "ADD_TRAINER";
+export const ADD_PAYMENT = "ADD_PAYMENT";
+export const STEP_1 = "STEP_1";
+export const STEP_2 = "STEP_2";
+export const STEP_3 = "STEP_3";
+export const STEP_4 = "STEP_4";
+export const STEP_5 = "STEP_5";
+export const UPDATE_STEP = "UPDATE_STEP";
+export const UPDATE_USER_STEP = "UPDATE_USER_STEP";
+export const ADD_TRAINERDETAILS = "ADD_TRAINERDETAILS";
+export const ADD_PROFDETAILS = "ADD_PROFDETAILS";
+export const ADD_DOC = "ADD_DOC";
+export const ADD_SERVICE = "ADD_SERVICE";
+
+export const GETUSERNAME = "GETUSERNAME";
+export const GET_USER_UID = "GET_USER_UID";
+export const ADD_REVIEW = "ADD_REVIEW";
+
+export const GET_SERVICE = "GET_SERVICE";
+export const GET_ONSERVICE = "GET_ONSERVICE";
+export const GET_PLAN = "GET_PLAN";
+export const USER_ADDRESS = "USER_ADDRESS";
+export const USER_AMOUNT = "USER_AMOUNT";
+export const USER_LOGIN_DETAILS = "USER_LOGIN_DETAILS";
+export const SPLASH_STATE = "SPLASH_STATE";
+export const PAYMENT_DIETPLANS = "PAYMENT_DIETPLANS";
+export const PAYMENT_ID = "PAYMENT_ID";
+export const GET_PAGE = "GET_PAGE";
+
+export const GET_AMOUNT = "GET_AMOUNT";
+export const USERDETIALS_STATE = "USERDETIALS_STATE";
+
+export const GET_SERVICEFORFORM = "GET_SERVICEFORFORM";
+export const UPDATE_STEP_BOOK_SESSION = "UPDATE_STEP_BOOK_SESSION";
+export const DESTROY_SESSION = "DESTROY_SESSION";
+export const ADD_BANK_DETAILS = "ADD_BANK_DETAILS";
+export const ADD_TICKET_RAISE = "ADD_TICKET_RAISE";
+export const TRIAL_DATE = "TRIAL_DATE";
+export const USER_CATEGORY = "USER_CATEGORY";
+export const Form_Close = "Form_Close";
+
+export const TRAINER_TYPE = "TRAINER_TYPE";
+export const GET_DESCRIPTION = "GET_DESCRIPTION";
+export const PICK_SERVICE_DATE = "PICK_SERVICE_DATE";
+export const PICK_SERVICE_TIME = "PICK_SERVICE_TIME";
+export const PICK_TRAINER_PACKAGE = "PICK_TRAINER_PACKAGE";
+export const RESET_BOOK_SESSION = "RESET_BOOK_SESSION";
+export const PAYMENT_BOOK_SESSION = "PAYMENT_BOOK_SESSION";
+export const GET_AMOUNT_BOOK_SESSION = "GET_AMOUNT_BOOK_SESSION";
+export const RESET_DIET_PLAN = "RESET_DIET_PLAN";
+
+export const OPEN_DIET ="OPEN_DIET";
+export const RESET_DIET_TYPE="RESET_DIET_TYPE";
+export const SHOW_MODAL = "SHOW_MODAL";

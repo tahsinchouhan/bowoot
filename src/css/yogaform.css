@@ -1,0 +1,79 @@
+.forminputfieldatyogaform {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px;
+  align-items: baseline;
+}
+.alignmentofsubheaderyogaform {
+  padding-right: 25px;
+}
+.inputfield-marginyoga {
+  margin-bottom: 20px;
+  background: #c5d0d661 !important;
+}
+.leftmarginyoga {
+  margin-left: 15px;
+}
+.veg,
+.nonveg,
+.low,
+.sedantary,
+.moderate {
+  background: greenyellow !important;
+  color: black !important;
+}
+.marginforyogabutton {
+  margin-bottom: 100px;
+}
+.enroll_buttonforyoga {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background-color: #aaf545;
+  color: black;
+}
+.yogaformimage {
+  height: 150px;
+  width: 150px;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .yogaformimage {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .enroll_buttonforyoga {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .enroll_buttonforyoga {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .enroll_buttonforyoga {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .enroll_buttonforyoga {
+    margin-bottom: 100px;
+  }
+  .preferreddiet {
+    font-size: 15px;
+  }
+  .dailylifestyle {
+    font-size: 15px;
+  }
+  .medicalcondition {
+    font-size: 15px;
+  }
+  .marginformyselfyogaform {
+    flex: 0 0 50%;
+    max-width: 100% !important;
+  }
+}

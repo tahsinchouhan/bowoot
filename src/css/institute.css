@@ -1,0 +1,64 @@
+.alignheaderfitness {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 18px;
+}
+.descriptionaligment {
+  display: flex;
+  margin: 20px;
+  text-align: justify;
+}
+.aligmentofsubparagraph {
+  padding-right: 425px;
+}
+.institutecard {
+  margin: auto;
+  width: 75%;
+}
+
+.pricealignment {
+  display: flex;
+}
+.marginbwprice {
+  margin-left: 20px;
+}
+
+.specialistfellowprogram {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  text-align: justify;
+}
+.descriptionaligment1 {
+  margin-right: auto;
+  margin-top: 20px;
+}
+.descriptionaligment2 {
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.institute-modal {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 320px) {
+  .pricealignment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+  .headerfontsize {
+    font-size: 15px;
+  }
+  .marginbwprice {
+    margin-left: 0%;
+  }
+}

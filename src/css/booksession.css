@@ -1,0 +1,177 @@
+.book_radio {
+  border: solid 2px gray;
+  border-radius: 4px;
+  padding: 6px;
+}
+/* .book_session_radio label:hover {
+    background-color: lightgray;
+  } */
+.book_session_radio input[type="radio"]:checked + label {
+  border: solid 2px greenyellow;
+  border-radius: 4px;
+}
+.margin_radio {
+  margin: 8px;
+}
+.table td,
+.table th {
+  border: none;
+}
+.book_arrow {
+  height: auto;
+  width: auto;
+  color: black !important;
+}
+.align_right {
+  float: right;
+}
+.book_service_time {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.book_service_time > .input > .form-group {
+  margin-bottom: 0px !important;
+  /* margin: 8px; */
+}
+.Certified_trainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 14px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.trainer_rupee {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  color: rgba(50, 58, 82, 0.9);
+  align-items: center;
+}
+.proceed_to_pay {
+  align-items: center;
+}
+.proceed {
+  background-color: black !important;
+  color: greenyellow;
+  border-radius: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 8rem;
+  height: 3rem;
+  top: 50%;
+}
+
+.txnid {
+  font-family: Consolas, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+}
+.book_heading {
+  padding: 10px;
+}
+
+.marginBottom_pick {
+  margin: 20px 12px;
+}
+.pick_service_radio > .radio label {
+  display: flex;
+  align-items: center;
+}
+.book_how_it_works {
+  display: flex;
+  flex-direction: column;
+  transform: translate(18%);
+}
+.book_index{
+  min-height: 120vh;
+}
+@media screen and (max-width: 320px) {
+  .booksession_container {
+    /* width: 50% !important;
+    margin-left: 98px !important;
+    margin-top: inherit !important; */
+    width: 57% !important;
+    margin-left: 84px !important;
+    margin-top: inherit !important;
+  }
+  .book_how_it_works {
+    margin-right: 135px;
+    padding-left: 25px;
+  }
+  .user_category_column {
+    flex-direction: column;
+  }
+  .bookhowcontainer{
+    width: 228px;
+    /* width: 199px; */
+  }
+  .proceed{
+    width: min-content ;
+    height: initial;
+    font-size: small;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .booksession_container {
+    width: 65% !important;
+    margin-left: 90px !important;
+    margin-top: inherit !important;
+    /* padding-right: 60px !important;
+        padding-left: 0px ; */
+  }
+  .book_how_it_works {
+    margin-right: 50px !important;
+    margin-left: 10px;
+  }
+  .user_category_column {
+    flex-direction: column;
+  }
+  .bookhowcontainer {
+    margin-right: 38px;
+    /* width: 199px; */
+  }
+  .bookhowcontainer{
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .booksession_container {
+    width: 70% !important;
+    margin-left: 90px !important;
+    margin-top: inherit !important;
+  }
+  .book_how_it_works {
+    margin-right: 100px !important;
+  }
+  .user_category_column {
+    flex-direction: column;
+  }
+  /* .bookhowcontainer{
+    width: 191px;
+  } */
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .user_category_column {
+    flex-direction: column;
+  }
+  /* .book_index > .MQ_Tab_allign{
+    max-width: 591px !important;
+  } */
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* .booksession_container {
+    margin-left: 50px !important;
+  } */
+  .book_how_it_works {
+    margin-right: 100px !important;
+  }
+  /* .user_category_column {
+    flex-direction: column;
+  } */
+}
+/* @media (min-width: 992px) and (max-width:1440px) {
+  .book_index > .container {
+    max-width: 854px;
+  }
+} */

@@ -1,0 +1,196 @@
+.productinfobtn {
+  background-color: white;
+
+  border-radius: 4rem;
+  border: none;
+  /* border: none;
+
+  padding: 15px 32px; */
+  color: yellowgreen;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px 0px 480px;
+  cursor: pointer;
+}
+.productclosetab {
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.btnmodal {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+
+  text-decoration: none;
+
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+.productsinfo {
+  text-align: justify;
+}
+.alignheader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.pricealignment {
+  display: flex;
+  justify-content: space-between;
+}
+.marginbwprice {
+  margin-right: 2rem;
+}
+
+.arrowSize {
+  font-size: 15px !important;
+}
+.product-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.productjsoncontainer {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  border: none;
+  background: white;
+}
+.spacebwheaderbtn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  text-align: left;
+}
+.new_price {
+  color: rgb(34, 41, 91);
+}
+.fa-chevron-down {
+  color: gray;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -16px !important;
+}
+.dottinproductinfo {
+  background-color: greenyellow;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+
+  box-shadow: 8px 9px 16px #d8e2ef;
+}
+
+.dottinproductinfo_toggle {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  margin-right: 60px;
+  box-shadow: 8px 9px 16px #d8e2ef;
+  font-size: 10px;
+  padding: 10px;
+}
+@media only screen and (max-width: 320px) {
+  .spaceoldnewprices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .new_price {
+    margin-left: -7px;
+    color: rgb(34, 41, 91);
+  }
+  .dottinproductinfo {
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: flex;
+
+    box-shadow: 8px 9px 16px #d8e2ef;
+  }
+  .arrowSize {
+    font-size: 15px !important;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .dottinproductinfo {
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: flex;
+
+    box-shadow: 8px 9px 16px #d8e2ef;
+  }
+  .arrowSize {
+    font-size: 15px !important;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .dottinproductinfo {
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: flex;
+
+    box-shadow: 8px 9px 16px #d8e2ef;
+  }
+  .arrowSize {
+    font-size: 15px !important;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .dottinproductinfo {
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: flex;
+
+    box-shadow: 8px 9px 16px #d8e2ef;
+  }
+  .arrowSize {
+    font-size: 15px !important;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .dottinproductinfo {
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: flex;
+
+    box-shadow: 8px 9px 16px #d8e2ef;
+  }
+  .arrowSize {
+    font-size: 15px !important;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 1250px) and (max-width: 1440px) {
+  .dottinproductinfo {
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: flex;
+
+    box-shadow: 8px 9px 16px #d8e2ef;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 769px) {
+  .mq_width {
+    max-width: 100% !important;
+  }
+}

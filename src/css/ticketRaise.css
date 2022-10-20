@@ -1,0 +1,14 @@
+.tickets_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    font-size: x-large;
+    color: gray;
+  }
+.ticket{
+    background-color: transparent !important;
+}
+.ticke_container_margin{
+    margin-left: 80px;
+}

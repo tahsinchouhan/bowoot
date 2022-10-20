@@ -1,0 +1,621 @@
+.accordion-Container {
+  margin-top: 100px;
+}
+.profile-Container {
+  margin-top: 200px;
+}
+.profile-Bucket {
+  text-align: center;
+}
+.ongoingSessionContainer {
+  background-color: #f5ac41;
+  width: 100%;
+}
+.ongoingHeading {
+  margin-left: 104px;
+  padding: 10px;
+}
+.servicesContainer {
+  background-color: white;
+  min-height: 100vh;
+  margin-top: 20px;
+  width: 100%;
+}
+.dietplanContainer {
+  background-color: white;
+  margin-top: 20px;
+  width: 100%;
+}
+.transactionHeading {
+  color: rgba(60, 68, 111, 0.6);
+}
+.left_tab {
+  display: flex;
+  position: fixed;
+  height: 100vh;
+  padding-left: 0px;
+}
+
+.right_tab {
+  width: 100%;
+  padding-left: 0px;
+  left: 25%;
+}
+.right_tab_cancel {
+  left: 0px;
+}
+.userdashrow {
+  padding-left: 0px;
+}
+.container-row-service {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.fa-chevron-down {
+  color: gray;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -8px;
+}
+.fa-chevron-up {
+  color: gray;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -16px;
+}
+.paymentId {
+  float: right;
+  padding-left: 100px;
+}
+.serviceDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dot {
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 8px 9px 16px #d8e2ef;
+}
+.accordionCss {
+  background-color: transparent;
+}
+.diet_plan_details {
+  background-color: ghostwhite;
+  width: 100%;
+  display: flex;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+.diet_plan_contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.containerflex {
+  display: flex !important;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sidebarposition {
+  position: fixed !important;
+  width: auto !important;
+}
+.profilenav {
+  color: white !important;
+}
+
+.card-header {
+  border: 0 !important;
+}
+
+.spinner-container {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0px;
+  left: 0;
+  min-height: 100vh;
+  pointer-events: none !important;
+  z-index: 99999999999999;
+  margin: 0 auto;
+}
+.spinner {
+  display: flex;
+  top: 50%;
+  left: 44%;
+  position: fixed;
+  color: greenyellow;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+}
+.diet-container-column {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.card-header {
+  background: transparent;
+}
+.card {
+  border: 0 !important;
+}
+.containerflex {
+  display: flex !important;
+}
+.sidenav---sidenav-nav---3tvij {
+  float: left;
+  padding: 0;
+  margin: 0;
+  clear: both;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-.sidenav---highlighted---oUx9u
+  > .sidenav---navitem---9uL5T {
+  cursor: pointer;
+}
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T {
+  position: relative;
+  display: block;
+  line-height: 50px;
+  height: 50px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  padding-top: 30px;
+  padding-left: 6px;
+}
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T::after {
+  content: none !important;
+}
+.user_right_end_container {
+  background-color: #f6f7fe;
+  min-height: 100vh;
+  right: 0;
+}
+.booksession_right_end {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background-color: #aaf545;
+  color: black;
+  max-width: min-content;
+  margin-top: 125px;
+}
+.booksession_right_end:hover {
+  font-size: 22px;
+}
+
+.choose_Diet_right_end {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background-color: #aaf545;
+  color: black;
+  max-width: 25vh;
+  margin-top: auto;
+}
+.choose_Diet_right_end:hover {
+  font-size: 22px;
+}
+.border_design {
+  /* border-left: 10px solid #aaf545; */
+  box-shadow: none;
+  padding: 0px;
+  /* background: #f5f8f1; */
+  border-radius: 4px;
+  margin: 20px 5px;
+  cursor: pointer;
+  padding: 10px;
+}
+.bg_color {
+  background-color: rgb(9, 20, 43, 0.9);
+  font-weight: 400;
+  color: white;
+}
+.book_diet_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.diet_content_width {
+  width: 100%;
+}
+.cardheader {
+  width: 100%;
+}
+.veiw_all_diet {
+  float: right;
+  margin-top: -30px;
+}
+.type_of_service {
+  display: flex;
+  flex-direction: column;
+}
+.trainer_package {
+  color: black;
+  border-radius: 10px;
+  font-weight: bolder;
+  background-color: #f5ac41;
+  padding: 4px;
+  display: flex;
+  width: 100px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.service_display {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+}
+.service_date_time {
+  font-size: 16px;
+  color: #323a52;
+  line-height: 30px;
+}
+.service_amount_paid {
+  font-weight: 600;
+  margin-left: auto;
+  display: FLEX;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #323a52;
+}
+.display_contents {
+  padding: 15px 30px 15px 15px;
+  background-color: #fcfcfc;
+  font-size: 14px;
+}
+.image_service {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.service_heading {
+  font-weight: 400;
+  color: #ccc;
+}
+.service_content_color {
+  font-weight: 600;
+  color: #abc;
+}
+.user_service_display_container {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 10px 9px 16px #d8e2ef;
+  margin: 5px;
+  border: 1px solid rgba(0, 128, 0, 0.2);
+  margin-bottom: 30px;
+}
+.user_dash_service_trainer {
+  background-color: greenyellow;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 6px 6px 0px 0px;
+  padding: 10px;
+  font-size: large;
+  font-weight: 500;
+  color: #323a52;
+}
+.service_package {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.service_font {
+  font-size: large;
+  color: #323a52;
+  font-weight: 700;
+}
+.padding_service {
+  padding: 20px 10px;
+}
+.price_user_dash {
+  color: #323a52;
+}
+.font-size-amount {
+  font-size: x-large;
+  font-weight: bolder;
+  padding: 10px 0px;
+}
+.trial {
+  font-size: small;
+}
+.transaction_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12px 5px 5px;
+  color: #323a52;
+}
+.forothers_dash {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 320px) {
+  .left_tab {
+    position: initial;
+  }
+  .userdashrow {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .right_tab {
+    left: 0;
+    width: 50vh;
+  }
+  .paymentId {
+    padding-left: 0px;
+    float: none;
+  }
+  .colum_reverse_Mq {
+    flex-direction: column-reverse;
+  }
+  .user_right_end_container {
+    background-color: transparent;
+    min-height: 0vh;
+  }
+  .dietplan_user_dash_mq {
+    display: none;
+  }
+  .blog_mq {
+    display: none;
+  }
+  .book_diet_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0 65px;
+  }
+  .booksession_right_end {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 10px;
+    background-color: #aaf545;
+    color: black;
+    max-width: min-content;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .choose_Diet_right_end {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 10px;
+    background-color: #aaf545;
+    color: black;
+    max-width: 25vh;
+    margin-top: 0px;
+  }
+  .ongoingHeading {
+    margin-left: 82px;
+    padding: 0px;
+  }
+  .mq_service_display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: -webkit-center;
+  }
+  .user_dash_service_trainer {
+    flex-direction: column;
+    font-size: small;
+  }
+  .transaction_container {
+    flex-direction: column;
+    align-items: end;
+  }
+  .service_amount_paid {
+    /* margin-top: auto; */
+    margin-left: 0px;
+    align-items: flex-start;
+  }
+  .font-size-amount {
+    font-size: medium;
+    font-weight: 600;
+  }
+  .service_date_time {
+    font-size: medium;
+    line-height: normal;
+  }
+  .service_display {
+    font-weight: 400;
+    padding: 0px;
+  }
+  .service_package {
+    justify-content: end;
+  }
+  .image_service {
+    flex-direction: column;
+  }
+  .padding_service {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* font-weight: 600;
+  margin-left: auto;
+  DISPLAY: FLEX;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #323a52; */
+@media only screen and (min-width: 321px) and (max-width: 426px) {
+  .border_design > .container-row-service {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .left_tab {
+    position: initial;
+  }
+  .userdashrow {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .right_tab {
+    left: 0;
+    width: 50vh;
+  }
+  .paymentId {
+    padding-left: 0px;
+    float: none;
+  }
+  .colum_reverse_Mq {
+    flex-direction: column-reverse;
+  }
+  .user_right_end_container {
+    background-color: transparent;
+    min-height: 0vh;
+  }
+  .dietplan_user_dash_mq {
+    display: none;
+  }
+  .blog_mq {
+    display: none;
+  }
+  .book_diet_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+  }
+  .booksession_right_end {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 10px;
+    background-color: #aaf545;
+    color: black;
+    max-width: min-content;
+    margin-top: 25px;
+    margin-bottom: 18px;
+  }
+  .choose_Diet_right_end {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 10px;
+    background-color: #aaf545;
+    color: black;
+    max-width: 25vh;
+    margin-top: auto;
+  }
+  .ongoingHeading {
+    margin-left: 32px;
+    padding: 0px;
+  }
+  .mq_service_display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: -webkit-center;
+  }
+  .user_dash_service_trainer {
+    flex-direction: column;
+  }
+  .image_service {
+    flex-direction: column;
+  }
+  .font-size-amount {
+    padding: 50px 0px 0px 0px;
+  }
+  .transaction_container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 7px 20px;
+  }
+  .service_date_time {
+    line-height: inherit;
+  }
+  .padding_service {
+    padding: 20px 10px 0px 10px;
+  }
+  .service_package {
+    justify-content: flex-start;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .userdashrow {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vh;
+  }
+  .right_tab {
+    margin: auto;
+  }
+  .paymentId {
+    padding-left: 0px;
+    float: none;
+  }
+  .ongoingHeading {
+    margin-left: 66px;
+  }
+  .bowoot {
+    font-size: 40px;
+  }
+  .user_right_end_container {
+    margin-left: auto;
+  }
+  .blog_mq {
+    padding-left: 256px !important;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .mq_service_display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: -webkit-center;
+  }
+  .user_dash_service_trainer {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .book_diet_button {
+    display: flex;
+    flex-direction: column;
+  }
+  .booksession_right_end {
+    margin-bottom: 12px;
+  }
+}

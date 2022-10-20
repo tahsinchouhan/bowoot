@@ -1,0 +1,24 @@
+.marginHeaderDiet {
+  margin-right: 20px;
+  color: rgb(34, 41, 91);
+}
+.PackageDetails_Header {
+  background: rgba(50, 58, 82, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.Acknowledgement_Header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background: rgba(50, 58, 82, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 4px 4px 0 0;
+}

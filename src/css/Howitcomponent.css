@@ -1,0 +1,15 @@
+.buttonalignment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.howitcomponent_button {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 4px;
+  background-color: #aaf545;
+  border-color: transparent;
+  color: black;
+  margin: 10px;
+}

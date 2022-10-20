@@ -1,0 +1,87 @@
+{
+  "name": "bowoot",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.0.0-rc.0",
+    "@material-ui/icons": "^4.4.1",
+    "@material-ui/styles": "^4.6.0",
+    "@trendmicro/react-sidenav": "^0.4.5",
+    "bootstrap": "^4.3.1",
+    "butter-toast": "^3.3.3",
+    "connected-react-router": "^6.5.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fa-icons": "^0.1.7",
+    "firebase": "^6.4.2",
+    "firebase-admin": "^8.6.0",
+    "firebase-tools": "^7.6.1",
+    "firebaseui": "^4.2.0",
+    "google-map-react": "^1.1.5",
+    "google-maps-react": "^2.0.2",
+    "history": "^4.9.0",
+    "jquery": "^3.4.1",
+    "lazy-line-painter": "^1.9.6",
+    "material-ui": "^1.0.0-beta.47",
+    "moment": "^2.24.0",
+    "node": "^12.9.0",
+    "prop-types": "^15.7.2",
+    "razorpay": "^2.0.5",
+    "react": "^16.11.0",
+    "react-accessible-accordion": "^3.0.0",
+    "react-alert": "^6.0.0",
+    "react-alert-template-basic": "^1.0.0",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-datepicker": "^2.10.0",
+    "react-dom": "^16.9.0",
+    "react-facebook-login": "^4.1.1",
+    "react-fontawesome": "^1.7.1",
+    "react-google-login": "^5.0.7",
+    "react-google-maps": "^9.4.5",
+    "react-material-ui-form-validator": "^2.0.9",
+    "react-moment": "^0.9.6",
+    "react-notify": "^3.0.0",
+    "react-redux": "^7.1.1",
+    "react-responsive-carousel": "^3.1.50",
+    "react-router-dom": "^5.0.1",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "3.1.1",
+    "react-select": "^3.0.8",
+    "react-slick": "^0.25.2",
+    "react-stepper-horizontal": "^1.0.11",
+    "react-svg": "^10.0.23",
+    "react-toastify": "^5.4.0",
+    "react-toasts": "^3.0.6",
+    "reactstrap": "^8.0.1",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.4",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "react-hot-loader": "^4.12.12"
+  }
+}

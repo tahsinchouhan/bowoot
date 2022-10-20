@@ -1,0 +1,311 @@
+.trainer_background {
+  background: url("../assests/diet.png") no-repeat rgba(228, 241, 251, 0.1)
+    bottom;
+  background-size: contain;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 100%;
+  align-items: center;
+}
+
+.trainer_home {
+  float: right;
+  top: 10px;
+  right: 10px;
+  position: fixed;
+  z-index: 55555;
+  color: #7cc234;
+  align-items: center;
+}
+
+.trainer_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: "white";
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.trainer_header_container {
+  background: rgba(50, 58, 82, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 4px 4px 0 0;
+}
+.fitness_container {
+  top: 45%;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  flex-direction: column;
+  width: 100%;
+  transform: translate(-50%, -45%);
+  background-color: "white";
+}
+.box-image {
+  box-shadow: 10px 9px 16px #d8e2ef;
+  position: relative;
+  background: white;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.typeButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.iconContainerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.iconNext {
+  font-size: 1.3rem;
+  color: #ccf381;
+  float: right;
+  margin: 20px 8px;
+  background: black;
+  border-radius: 50%;
+}
+.iconPrev {
+  font-size: 1.3rem;
+  color: #d6ea8e;
+  margin: 20px 8px;
+  background: black;
+  border-radius: 50%;
+}
+.buttonTrainerSelect {
+  background: rgba(245, 245, 245, 0.3);
+  padding: 14px;
+  border: gray 2px solid;
+  margin: 10px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.buttonTrainerSelectActive {
+  border: yellowgreen 3px solid;
+  background: rgba(245, 245, 245, 0.3);
+  padding: 14px;
+  margin: 10px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.buttontrainerselectactive:focus {
+  outline: transparent !important;
+}
+
+.progressStyle {
+  height: 6px !important;
+  border-radius: 0px !important;
+  background: grey;
+}
+
+.progress-bar {
+  background: greenyellow !important;
+}
+
+.shady_header {
+  color: #8d90a9;
+  margin: 20px;
+  font-size: 40px 0;
+}
+.shady_header2 {
+  font-size: 34px;
+  color: #8d90a9;
+  margin: 20px 0;
+}
+.shady_header3 {
+  font-size: 20px;
+  color: #8d90a9;
+  margin: 20px 0;
+}
+
+.submitAllignment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.buttonsubmit {
+  background-color: greenyellow;
+  border-radius: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 8rem;
+  height: 3rem;
+  top: 50%;
+}
+.button_date {
+  background-color: white;
+  border: solid 1px greenyellow !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.MQ_allign {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 50px;
+}
+.black-background {
+  background-color: #080808;
+  color: yellowgreen;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 600;
+}
+.fit_howitworks {
+  display: flex;
+  flex-direction: column;
+  transform: translate(18%);
+}
+.marginBottom {
+  margin: 0 12px;
+}
+.fitnessChooseImage {
+  width: 30%;
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+}
+.justify_content {
+  justify-content: space-evenly;
+}
+
+.fitnesscontainer ul {
+  list-style: none;
+}
+
+.fitnesscontainer ul li {
+  position: relative;
+}
+
+.fitnesscontainer ul li:before {
+  margin: 8px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #3e8232;
+  content: "";
+  margin-right: 16px;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 320px) {
+  .shady_header {
+    font-size: 16px !important;
+  }
+  .buttonsubmitnext {
+    width: min-content;
+    height: initial;
+
+    font-size: small;
+  }
+  .buttonsubmit {
+    width: min-content !important;
+    height: initial !important;
+    font-size: small !important;
+    flex-direction: column !important;
+  }
+  .fit_howitworks {
+    margin-right: 88px !important;
+  }
+  .fitnessChooseImage {
+    display: none;
+  }
+  .shady_header2 {
+    font-size: 20px;
+    color: rgba(60, 68, 111, 0.6);
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .fit_howitworks {
+    margin-right: 80px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .fit_howitworks {
+    margin-right: 118px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 426px) {
+  .shady_header {
+    font-size: 16px !important;
+  }
+  .buttonsubmitnext {
+    width: min-content;
+    height: initial;
+
+    font-size: small;
+  }
+  .buttonsubmit {
+    width: min-content !important;
+    height: initial !important;
+    font-size: small !important;
+    flex-direction: column !important;
+  }
+  .fitnessChooseImage {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .shady_header {
+    font-size: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .shady_header {
+    font-size: 20px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .shady_header {
+    font-size: 64px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .shady_header {
+    font-size: 64px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .trainer_box_mq {
+    max-width: 75vh !important;
+  }
+  .shady_header {
+    font-size: 40px;
+  }
+  .MQ_Tab_allign {
+    max-width: 598px !important;
+  }
+  .fitnessChooseImage {
+    width: 24%;
+  }
+}
+@media only screen and (min-width: 770px) and (max-width: 1025px) {
+  .trainer_box_mq {
+    margin-top: 90px;
+    max-width: 80vh;
+  }
+  .fitnesscontainer {
+    margin-right: 55px;
+  }
+  .fitnessChooseImage {
+    width: 23%;
+  }
+}
+@media only screen and (min-width: 1026px) and (max-width: 1440px) {
+  .fitnessChooseImage {
+    width: 23%;
+  }
+}

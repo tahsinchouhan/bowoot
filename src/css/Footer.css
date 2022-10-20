@@ -1,0 +1,182 @@
+#lion {
+  width: 40%;
+  height: 60%;
+}
+
+.modal-content {
+  box-shadow: none !important;
+}
+.modal-header {
+  margin-left: auto !important;
+}
+.items {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.bowootfoot {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.faqfoot {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.corporatefoot {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.servicesfoot {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  text-align: justify;
+}
+.itemsfoot {
+  color: white;
+}
+@media only screen and (max-width: 320px) {
+  .servicesfoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .faqfoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .corporatefoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bowootfoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .itemsfoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .service_mq_foot{
+    margin-left: 84px;
+  }
+  .faq{
+    text-align: center;
+  }
+  .faq_item_mq{
+    margin-left: 34px;
+  }
+  .makeinindia{
+    margin-left: auto;
+  }
+  .corporate_mq{
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 769px) {
+  .bowootfoot {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: space-between;
+  }
+  .corporatefoot {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: space-between;
+  }
+  .faqfoot {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: space-between;
+  }
+  .servicesfoot {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: space-between;
+  }
+  .containerMakeInIndia {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: flex-end;
+  }
+  .makeinindia {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width:426px){
+  .servicesfoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .faqfoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .corporatefoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bowootfoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .itemsfoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .faq{
+    text-align: center;
+  }
+  .faq_item_mq{
+    margin-left: 34px;
+  }
+  .makeinindia{
+    margin-left: 36px;
+  }
+  .corporate_mq{
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .service_mq_foot{
+    margin-left: 106px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .service_mq_foot{
+    margin-left: 115px;
+  }
+}

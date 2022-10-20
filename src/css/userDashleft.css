@@ -1,0 +1,232 @@
+.userdashleftcontainer {
+  background-color: white;
+  min-height: 100vh;
+  width: 100%;
+  float: left;
+}
+.ongoingSessionHeader {
+  color: rgba(60, 68, 111, 0.6);
+}
+.serviceheader {
+  color: rgba(60, 68, 111, 0.6);
+}
+.dietPlanHeading {
+  color: rgba(60, 68, 111, 0.6);
+}
+
+.avatarimg {
+  border-radius: 50%;
+  width: 150px;
+  margin: 10px 85px;
+}
+.navvertical {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column !important;
+}
+.navcollapse {
+  /* text-align: center;  */
+  /* flex-direction: column; */
+  color: grey;
+}
+.navLink:hover {
+  background-color: lightgray;
+}
+ul {
+  list-style: none;
+}
+a {
+  cursor: pointer;
+}
+.modal-container-userdash {
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 8px 9px 16px #d8e2ef;
+}
+.padding_user_dash_center {
+  padding: 50px;
+}
+.ongoing_contents{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 600;
+  
+}
+.ongoing_time{
+  font-size: 14px;
+}
+@media screen and (max-width: 320px) {
+  .avatarimg {
+    display: none;
+  }
+  .profileComponent {
+    display: none;
+  }
+  .profileDetails {
+    display: none;
+  }
+  .userdashleftcontainer {
+    background-color: initial;
+  }
+  .padding_user_dash_center {
+    padding: 0px;
+    max-width: 37vh;
+  }
+  .serviceheader {
+    font-size: 22px;
+  }
+  .modal-container-userdash {
+    padding: 0px;
+    padding-top: 8px;
+  }
+  .ongoing_time {
+    display: flex;
+}
+.ongoing_contents{
+  padding: 5px;
+}
+
+}
+@media only screen and (min-width: 321px) and (max-width: 426px) {
+  .modal-container-userdash {
+    padding: 0px;
+    padding-top: 7px;
+  }
+  .font_ongoing{
+    font-size: 24px !important;
+  }
+  .serviceheader {
+    font-size: 24px;
+}
+.ongoing_contents{
+  padding: 8px;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+  .avatarimg {
+    display: none;
+  }
+  .profileComponent {
+    display: none;
+  }
+  .profileDetails {
+    display: none;
+  }
+  .padding_user_dash_center {
+    padding: 6px;
+  }
+  .ongoing_contents{
+    padding: 10px;
+  }
+}
+.sidenav---sidenav---_2tBP {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1006;
+  min-width: 64px;
+  background: #080808 !important;
+  transition: min-width 0.15s;
+  width: 8%;
+}
+
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T
+  .sidenav---navicon---3gCRo,
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T
+  .sidenav---navtext---1AE_f {
+  color: white;
+}
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T
+  .sidenav---navicon---3gCRo,
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T
+  .sidenav---navtext---1AE_f {
+  color: white;
+}
+.sidenav---sidenav---_2tBP.sidenav---expanded---1KdUL
+  .sidenav---sidenav-subnav---1EN61
+  > .sidenav---sidenav-subnavitem---1cD47
+  > .sidenav---navitem---9uL5T {
+  color: white;
+}
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T
+  .sidenav---navicon---3gCRo,
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T
+  .sidenav---navtext---1AE_f {
+  color: white;
+}
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T
+  .sidenav---navicon---3gCRo
+  > *,
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T
+  .sidenav---navtext---1AE_f
+  > * {
+  color: white;
+}
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T
+  .sidenav---navicon---3gCRo
+  > *,
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T
+  .sidenav---navtext---1AE_f
+  > * {
+  color: white;
+}
+.NavIcon {
+  color: white;
+}
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T
+  .sidenav---navicon---3gCRo,
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T
+  .sidenav---navtext---1AE_f {
+  color: white;
+}
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T
+  .sidenav---navicon---3gCRo
+  > *,
+.sidenav---sidenav-nav---3tvij
+  > .sidenav---sidenav-navitem---uwIJ-
+  > .sidenav---navitem---9uL5T
+  .sidenav---navtext---1AE_f
+  > * {
+  color: white;
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .modal-container-userdash {
+    padding: 0px;
+    padding-top: 10px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .dietPlanHeading {
+    font-size: 20px;
+  }
+}

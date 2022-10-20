@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand|Roboto:700");
+
+.text-with-animation {
+  font-size: 6vw;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 100vh;
+  vertical-align: middle;
+  animation: main-text-animation 1.7s ease-in-out forwards;
+  font-weight: 700;
+  color: #aaf545;
+  overflow: hidden;
+  display: block;
+  width: 500vw;
+  margin-left: -200vw;
+}
+
+.splash-container {
+  height: 100vh;
+  line-height: 100vh;
+  vertical-align: middle;
+  background: linear-gradient(to bottom right, #080808 20%, #010101);
+}
+
+.subtext-with-animation {
+  position: absolute;
+  font-size: 2vw;
+  text-align: center;
+  line-height: 100vh;
+  vertical-align: middle;
+  top: 0;
+  width: 100%;
+  font-family: "Gochi Hand";
+  color: #000;
+  letter-spacing: 4px;
+  user-select: none;
+  display: flex;
+
+  justify-content: center;
+}
+
+.subtext-with-animation div:first-of-type {
+  color: whitesmoke;
+  display: none;
+  position: relative;
+  opacity: 0.4;
+  animation: word-animation 0.5s ease-out 1.5s forwards;
+}
+
+.subtext-with-animation div:nth-of-type(2) {
+  color: whitesmoke;
+  display: none;
+  position: relative;
+  opacity: 0.4;
+  animation: word-animation 0.5s ease-out 1.7s forwards;
+}
+
+body,
+html {
+  width: 100vw;
+  max-width: 100vw;
+  background: linear-gradient(to bottom right, #080808 20%, #040404);
+}
+
+@keyframes main-text-animation {
+  0% {
+    letter-spacing: 25vw;
+    word-spacing: 100vw;
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  100% {
+    letter-spacing: 4px;
+    word-spacing: 1vw;
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes word-animation {
+  0% {
+    top: 10vw;
+    opacity: 0;
+  }
+  100% {
+    top: 3.5vw;
+    opacity: 1;
+  }
+}

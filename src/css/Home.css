@@ -1,0 +1,673 @@
+#landing {
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  min-height: 100vh;
+  /* background: url('./../assests/Artboard.png') no-repeat; */
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container > h2 > strong {
+  color: #3c446f;
+}
+.container > h2 {
+  margin: 40px;
+}
+.container-column {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.container-column-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.container-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.nav {
+  text-align: center;
+}
+.image-gif-main {
+  background: url("./../assests/mobile.svg") no-repeat right;
+  height: 35rem;
+  width: 100%;
+  right: 10%;
+  position: absolute;
+}
+.image-gif {
+  height: 25rem;
+  display: flex;
+  right: 0;
+  transform: scaleX(-1);
+}
+.foot {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 4rem;
+  color: white;
+  margin: 0;
+}
+.items {
+  list-style: none;
+  cursor: pointer;
+}
+.items1 {
+  list-style: none;
+  margin-right: 2.5rem;
+  cursor: pointer;
+}
+.foothead {
+  margin-top: 4rem;
+}
+.items {
+  list-style: none;
+  margin-right: 2.5rem;
+  cursor: pointer;
+}
+.background-watermark {
+  background: url("./../assests/background.png");
+  background-position: center;
+}
+.gym-background {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.home8 {
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.home5 {
+  margin-left: 6rem;
+}
+.home6 {
+  line-height: 2rem;
+  margin-left: 5rem;
+}
+.enroll_main {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.enroll_card {
+  display: flex;
+  justify-content: flex-end;
+}
+@-webkit-keyframes example {
+  0% {
+    bottom: 0px;
+    top: 200px;
+  }
+  100% {
+    top: 0px;
+    bottom: 200px;
+  }
+}
+@keyframes example {
+  0% {
+    bottom: 0px;
+    top: 200px;
+  }
+  100% {
+    top: 0px;
+    bottom: 200px;
+  }
+}
+.enroll-now-container-diet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  margin: 10px 5px;
+  box-shadow: 0px 0px 20px 1px #d8e2ef;
+  cursor: pointer;
+}
+
+.enroll-now-container-diet:hover {
+  background: whitesmoke;
+  transform: scale3d(2px);
+}
+
+.container-diet {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between !important;
+  height: 100%;
+  font-weight: 400;
+  font-size: 16px;
+}
+.diet-bottom {
+  width: 100%;
+  background: greenyellow;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+.enroll-now-container > img {
+  width: 10vh;
+  height: 10vh;
+  transform: scaleX(-1);
+}
+
+.home10 {
+  margin-top: 2rem;
+}
+.padding-10 {
+  padding: 10px;
+}
+
+.requestFooter {
+  margin: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  background: ghostwhite;
+  border-radius: 0 0 20px 20px !important;
+}
+.list {
+  list-style: none;
+  width: 600px;
+  max-width: 90%;
+}
+​ .item {
+  display: block;
+  clear: both;
+  counter-increment: list;
+  padding-bottom: 4rem;
+  font-size: 1.1rem;
+  line-height: 1.375;
+  position: relative;
+}
+​ .item:before {
+  font: bold 1.25rem/1 var(--font-number);
+  content: counter(list);
+  width: 2rem;
+  height: 2rem;
+  float: left;
+  margin: 0 0.5rem 0.75rem 0;
+  color: var(--bg);
+  background: var(--highlight1)
+    linear-gradient(to bottom right, var(--highlight1) 25%, var(--highlight2));
+  text-shadow: 0 0 2px var(--highlight1);
+  border-radius: 0 50% 50% 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  shape-outside: ellipse();
+  z-index: 1;
+}
+​ .item:after {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: var(--highlight1);
+  z-index: -1;
+  border-top-left-radius: 3px;
+}
+​ ​ .headline {
+  padding: 0rem 0 0 0;
+  margin: 0 0 1rem 0;
+  font: normal 2rem var(--font-head);
+}
+.enroll_label_header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #bdb76c;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 2rem !important;
+}
+
+.container-container-diet {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.requestformalignment {
+  position: fixed;
+  display: flex;
+  z-index: 9999;
+  justify-content: flex-end;
+  bottom: 0;
+  right: 2%;
+}
+
+.custom-map-modal {
+  position: relative !important;
+  top: 0%;
+}
+.custom-map-modal > .modal-content {
+  border-radius: 4px 20px 20px 20px;
+}
+.iconsallignment {
+  text-align: center;
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  width: 15%;
+  border-radius: 25px;
+  background: rgba(189, 183, 108, 0.1);
+}
+.margin-0 {
+  margin: 0 !important;
+}
+.padding-0 {
+  padding: 0 !important;
+}
+
+.textAlign-center {
+  text-align: center;
+}
+.bold {
+  font-weight: 600;
+}
+.iconsallignment [class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-size: 60px;
+  margin: 0;
+}
+
+.enroll-now-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 10px 9px 16px #d8e2ef;
+  margin: 5px;
+  border: 1px solid rgba(0, 128, 0, 0.2);
+}
+.enroll_label {
+  color: #3c446f;
+  font-size: 18px;
+  font-weight: bold;
+}
+.enroll_button {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background-color: #aaf545;
+  color: black;
+}
+.enroll_button:hover {
+  padding: 12px 20px;
+}
+.iconText {
+  font-size: 20px;
+  font-weight: 600;
+  color: slategrey;
+}
+.Howitworks_Header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background: rgba(50, 58, 82, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 4px 4px 0 0;
+}
+@media only screen and (max-width: 320px) {
+  .dietplanheading {
+    font-size: 1.5rem;
+  }
+  .app_inner input[type="radio"]:not(checked) + label .app_inner__tab {
+    height: 42px;
+    border-left: 12px solid rgba(117, 186, 49, 0.6);
+  }
+  .howitworksheading {
+    font-size: 1.5rem;
+  }
+  .iconText {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .iconsallignment {
+    display: table;
+    width: 40%;
+    margin: 10px;
+  }
+  .dietplanWidthContainer {
+    width: 80%;
+    max-width: 22vh;
+  }
+  .safehandsheading {
+    font-size: 1.5rem;
+  }
+  .dietplanWidth {
+    width: 100%;
+  }
+  .dietplans {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .requestformalignment {
+    bottom: 0;
+    right: 2%;
+  }
+  .iconsheading {
+    font-size: 1.5rem;
+  }
+  .weightLiftingLady {
+    display: none;
+  }
+  .tab_right {
+    flex-direction: column;
+  }
+  .yogalady {
+    display: none;
+  }
+  .requestformalignmentformobile {
+    position: fixed;
+    bottom: 0;
+    right: 2%;
+    display: flex;
+    z-index: 9999;
+    justify-content: flex-end;
+  }
+  .padding-10 {
+    font-size: 14px;
+    word-break: break-word;
+  }
+  .diet-bottom {
+    justify-content: center;
+  }
+  .enroll_label_header {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .enroll_card {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .enroll_label {
+    font-size: 14px;
+  }
+  .enroll_button {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: #aaf545;
+    color: black;
+  }
+  .enroll-now-container {
+    display: flex !important;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 6px 5px 12px #d8e2ef;
+    margin: 5px;
+    border: 1px solid rgba(0, 128, 0, 0.2);
+  }
+}
+@media only screen and (max-width: 375px) {
+  .weightLiftingLady {
+    display: none;
+  }
+  .dietplanheading {
+    font-size: 1.5rem;
+  }
+  .app_inner input[type="radio"]:not(checked) + label .app_inner__tab {
+    height: 42px;
+    border-left: 12px solid rgba(117, 186, 49, 0.6);
+  }
+  .howitworksheading {
+    font-size: 1.5rem;
+  }
+  .iconText {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .iconsallignment {
+    display: table;
+    width: 40%;
+    margin: 10px;
+  }
+  .dietplanWidthContainer {
+    width: 80%;
+    max-width: 22vh;
+  }
+  .safehandsheading {
+    font-size: 1.5rem;
+  }
+  .dietplanWidth {
+    width: 100%;
+  }
+  .dietplans {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .requestformalignment {
+    bottom: 0;
+    right: 2%;
+  }
+  .iconsheading {
+    font-size: 1.5rem;
+  }
+  .weightLiftingLady {
+    display: none;
+  }
+  .tab_right {
+    flex-direction: column;
+  }
+  .yogalady {
+    display: none;
+  }
+  .requestformalignmentformobile {
+    position: fixed;
+    bottom: 0;
+    right: 2%;
+    display: flex;
+    z-index: 9999;
+    justify-content: flex-end;
+  }
+  .padding-10 {
+    font-size: 14px;
+    word-break: break-word;
+  }
+  .diet-bottom {
+    justify-content: center;
+  }
+  .enroll_label_header {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .enroll_card {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .enroll_label {
+    font-size: 14px;
+  }
+  .enroll_button {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: #aaf545;
+    color: black;
+  }
+  .enroll-now-container {
+    display: flex !important;
+    background: white;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 6px 5px 12px #d8e2ef;
+    margin: 5px;
+    border: 1px solid rgba(0, 128, 0, 0.2);
+  }
+}
+@media only screen and (max-width: 425px) {
+  .weightLiftingLady {
+    display: none;
+  }
+  .dietplanheading {
+    font-size: 1.5rem;
+  }
+  .app_inner input[type="radio"]:not(checked) + label .app_inner__tab {
+    height: 42px;
+    border-left: 12px solid rgba(117, 186, 49, 0.6);
+  }
+  .howitworksheading {
+    font-size: 1.5rem;
+  }
+  .iconText {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .iconsallignment {
+    display: table;
+    width: 40%;
+    margin: 10px;
+  }
+  .dietplanWidthContainer {
+    width: 80%;
+    max-width: 22vh;
+  }
+  .safehandsheading {
+    font-size: 1.5rem;
+  }
+  .dietplanWidth {
+    width: 100%;
+  }
+  .dietplans {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .requestformalignment {
+    bottom: 0;
+    right: 2%;
+  }
+  .iconsheading {
+    font-size: 1.5rem;
+  }
+  .weightLiftingLady {
+    display: none;
+  }
+  .tab_right {
+    flex-direction: column;
+  }
+  .yogalady {
+    display: none;
+  }
+  .requestformalignmentformobile {
+    position: fixed;
+    margin-left: 150px;
+    bottom: 2%;
+    display: flex;
+    z-index: 9999;
+    justify-content: flex-end;
+  }
+  .padding-10 {
+    font-size: 14px;
+    word-break: break-word;
+  }
+  .diet-bottom {
+    justify-content: center;
+  }
+  .enroll_label_header {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .enroll_card {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .enroll_label {
+    font-size: 14px;
+  }
+  .enroll_button {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: #aaf545;
+    color: black;
+  }
+  .enroll-now-container {
+    display: flex !important;
+    background: white;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 6px 5px 12px #d8e2ef;
+    margin: 5px;
+    border: 1px solid rgba(0, 128, 0, 0.2);
+  }
+}
+@media all and (max-width: 767px) {
+  .yogalady {
+    display: none;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 769px) {
+  .iconsallignment {
+    display: table;
+    width: 37%;
+    margin: 10px;
+  }
+
+  .requestformalignment {
+    position: fixed;
+    bottom: 0;
+    right: 2%;
+    display: flex;
+    z-index: 9999;
+    justify-content: flex-end;
+  }
+  .yogalady {
+    justify-content: center;
+    margin-top: 225px;
+  }
+  .dietplanWidthContainer {
+    width: 80%;
+    max-width: 26vh;
+  }
+  .dietplanWidth {
+    width: 100%;
+  }
+  .dietplans {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
