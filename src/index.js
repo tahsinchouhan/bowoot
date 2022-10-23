@@ -1,14 +1,14 @@
+/* eslint-disable */ /* eslint-disable */
 import React from "react";
+
 import ReactDOM from "react-dom";
-import App from "./App";
-import { registerServiceWorker } from "./register-sw";
-import { createStore, applyMiddleware } from "redux";
-import rootReducer from "./reducers";
 import { Provider } from "react-redux";
-import thunk from "redux-thunk";
+import { applyMiddleware, createStore } from "redux";
 import logger from "redux-logger";
+import thunk from "redux-thunk";
+import App from "./App";
 import { loadState, saveState } from "./localStorage";
-import firebase from "firebase";
+import rootReducer from "./reducers";
 
 import "./index.css";
 
