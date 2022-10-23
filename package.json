@@ -82,6 +82,7 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.0.0",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-promise": "^6.1.1",
     "react-hot-loader": "^4.12.12"
   }
