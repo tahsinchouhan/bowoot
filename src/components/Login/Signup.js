@@ -103,6 +103,7 @@ class Signup extends Component {
   };
 
   render() {
+    console.log("dsjh");
     return (
       <div>
         <Row>
