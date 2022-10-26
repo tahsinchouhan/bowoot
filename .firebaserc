@@ -1,7 +1,7 @@
 {
   "projects": {
-    "default": "bowoot-c34ef",
-    "staging": "bowoot-c34ef"
+    "default": "bowoot-test",
+    "staging": "bowoot-test"
   },
   "targets": {},
   "etags": {}

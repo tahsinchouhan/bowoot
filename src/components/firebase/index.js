@@ -1,4 +1,4 @@
-import firebase from "firebase/app";
+import { initializeApp } from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
 
@@ -25,18 +25,21 @@ const prodConfig = {
 // };
 
 const devConfig = {
-  apiKey: "AIzaSyAypyBBUOOGhkvvCI_VKMm4tsupvR6Qzns",
-  authDomain: "bowoot-c34ef.firebaseapp.com",
-  projectId: "bowoot-c34ef",
-  storageBucket: "bowoot-c34ef.appspot.com",
-  messagingSenderId: "121371231704",
-  appId: "1:121371231704:web:ccd217967dfe1fbde1dead",
-  measurementId: "G-V0XD61Q1L8",
+  apiKey: "AIzaSyDunjSQB2jlb6HeGu1isrtKv6g5WsEUuOg",
+  authDomain: "bowoot-test.firebaseapp.com",
+  databaseURL: "https://bowoot-test.firebaseio.com",
+  projectId: "bowoot-test",
+  storageBucket: "bowoot-test.appspot.com",
+  messagingSenderId: "109691704068",
+  appId: "1:109691704068:web:49c17f9ca34b4059a07651",
+  measurementId: "G-YHZPSN066F",
 };
+
+const app = initializeApp(devConfig);
 
 const config = process.env.NODE_ENV === "production" ? prodConfig : devConfig;
 
-if (!firebase.apps.length) {
-  firebase.initializeApp(config);
-}
-export { firebase };
+// if (!firebase.apps.length) {
+//   firebase.initializeApp(config);
+// }
+// export { firebase };
