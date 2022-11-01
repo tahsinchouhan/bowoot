@@ -12,17 +12,6 @@ const prodConfig = {
   measurementId: "G-X0B2WP80EK",
 };
 
-// const devConfig = {
-//   apiKey: "AIzaSyDunjSQB2jlb6HeGu1isrtKv6g5WsEUuOg",
-//   authDomain: "bowoot-test.firebaseapp.com",
-//   databaseURL: "https://bowoot-test.firebaseio.com",
-//   projectId: "bowoot-test",
-//   storageBucket: "bowoot-test.appspot.com",
-//   messagingSenderId: "109691704068",
-//   appId: "1:109691704068:web:7e8a35126cff8258a07651",
-//   measurementId: "G-RPSTRHS607"
-// };
-
 const devConfig = {
   apiKey: "AIzaSyDunjSQB2jlb6HeGu1isrtKv6g5WsEUuOg",
   authDomain: "bowoot-test.firebaseapp.com",
@@ -34,11 +23,11 @@ const devConfig = {
   measurementId: "G-RPSTRHS607",
 };
 
-const app = initializeApp(devConfig);
 
-const config = process.env.NODE_ENV === "production" ? prodConfig : devConfig;
+const config = process.env.NODE_ENV === "production" ? devConfig : devConfig;
 
-// if (!firebase.apps.length) {
-//   firebase.initializeApp(config);
-// }
-// export { firebase };
+if (!firebase.apps.length) {
+  firebase.initializeApp(config);
+}
+export { firebase };
+

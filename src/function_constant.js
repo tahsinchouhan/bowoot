@@ -21,4 +21,4 @@ const dev_function = {
 };
 
 export const functions_for_users =
-  process.env.NODE_ENV === "production" ? prod_function : dev_function;
+  process.env.NODE_ENV === "production" ? dev_function : dev_function;
