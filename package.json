@@ -11,7 +11,11 @@
     "butter-toast": "^3.3.3",
     "connected-react-router": "^6.5.2",
     "cors": "^2.8.5",
+<<<<<<< HEAD
     "eslint": "^5.12.0",
+=======
+    "eslint-config-react-app": "^7.0.1",
+>>>>>>> mustafa-2
     "express": "^4.17.1",
     "fa-icons": "^0.1.7",
     "firebase": "^6.6.2",
@@ -66,9 +70,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -83,7 +84,13 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.0.0",
+<<<<<<< HEAD
     "eslint-config-react-app": "^7.0.1",
+=======
+    "eslint": "^5.16.0",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.26.0",
+>>>>>>> mustafa-2
     "eslint-plugin-promise": "^6.1.1",
     "react-hot-loader": "^4.12.12"
   }

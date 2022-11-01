@@ -1,4 +1,3 @@
-import { initializeApp } from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
 
@@ -31,8 +30,8 @@ const devConfig = {
   projectId: "bowoot-test",
   storageBucket: "bowoot-test.appspot.com",
   messagingSenderId: "109691704068",
-  appId: "1:109691704068:web:49c17f9ca34b4059a07651",
-  measurementId: "G-YHZPSN066F",
+  appId: "1:109691704068:web:7e8a35126cff8258a07651",
+  measurementId: "G-RPSTRHS607",
 };
 
 const app = initializeApp(devConfig);
