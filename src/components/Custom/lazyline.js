@@ -1,13 +1,13 @@
-!(function(t, e) {
-  "object" == typeof exports && "object" == typeof module
+!(function (t, e) {
+  "object" === typeof exports && "object" === typeof module
     ? (module.exports = e())
-    : "function" == typeof define && define.amd
+    : "function" === typeof define && define.amd
     ? define("lazy-line-painter", [], e)
     : "object" == typeof exports
     ? (exports["lazy-line-painter"] = e())
     : (t["lazy-line-painter"] = e());
-})(window, function() {
-  return (function(t) {
+})(window, function () {
+  return (function (t) {
     var e = {};
     function i(n) {
       if (e[n]) return e[n].exports;
@@ -17,16 +17,16 @@
     return (
       (i.m = t),
       (i.c = e),
-      (i.d = function(t, e, n) {
+      (i.d = function (t, e, n) {
         i.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: n });
       }),
-      (i.r = function(t) {
+      (i.r = function (t) {
         "undefined" != typeof Symbol &&
           Symbol.toStringTag &&
           Object.defineProperty(t, Symbol.toStringTag, { value: "Module" }),
           Object.defineProperty(t, "__esModule", { value: !0 });
       }),
-      (i.t = function(t, e) {
+      (i.t = function (t, e) {
         if ((1 & e && (t = i(t)), 8 & e)) return t;
         if (4 & e && "object" == typeof t && t && t.__esModule) return t;
         var n = Object.create(null);
@@ -39,94 +39,94 @@
             i.d(
               n,
               s,
-              function(e) {
+              function (e) {
                 return t[e];
               }.bind(null, s)
             );
         return n;
       }),
-      (i.n = function(t) {
+      (i.n = function (t) {
         var e =
           t && t.__esModule
-            ? function() {
+            ? function () {
                 return t.default;
               }
-            : function() {
+            : function () {
                 return t;
               };
         return i.d(e, "a", e), e;
       }),
-      (i.o = function(t, e) {
+      (i.o = function (t, e) {
         return Object.prototype.hasOwnProperty.call(t, e);
       }),
       (i.p = ""),
       i((i.s = 2))
     );
   })([
-    function(t, e, i) {
+    function (t, e, i) {
       "use strict";
       Object.defineProperty(e, "__esModule", { value: !0 }),
         (e.default = void 0);
       var n = {
-        easeLinear: function(t) {
+        easeLinear: function (t) {
           return t;
         },
-        easeInQuad: function(t) {
+        easeInQuad: function (t) {
           return t * t;
         },
-        easeOutQuad: function(t) {
+        easeOutQuad: function (t) {
           return t * (2 - t);
         },
-        easeInOutQuad: function(t) {
+        easeInOutQuad: function (t) {
           return (t *= 2) < 1 ? 0.5 * t * t : -0.5 * (--t * (t - 2) - 1);
         },
-        easeInCubic: function(t) {
+        easeInCubic: function (t) {
           return t * t * t;
         },
-        easeOutCubic: function(t) {
+        easeOutCubic: function (t) {
           return --t * t * t + 1;
         },
-        easeInOutCubic: function(t) {
+        easeInOutCubic: function (t) {
           return (t *= 2) < 1 ? 0.5 * t * t * t : 0.5 * ((t -= 2) * t * t + 2);
         },
-        easeInQuart: function(t) {
+        easeInQuart: function (t) {
           return t * t * t * t;
         },
-        easeOutQuart: function(t) {
+        easeOutQuart: function (t) {
           return 1 - --t * t * t * t;
         },
-        easeInOutQuart: function(t) {
+        easeInOutQuart: function (t) {
           return (t *= 2) < 1
             ? 0.5 * t * t * t * t
             : -0.5 * ((t -= 2) * t * t * t - 2);
         },
-        easeInQuint: function(t) {
+        easeInQuint: function (t) {
           return t * t * t * t * t;
         },
-        easeOutQuint: function(t) {
+        easeOutQuint: function (t) {
           return --t * t * t * t * t + 1;
         },
-        easeInOutQuint: function(t) {
+        easeInOutQuint: function (t) {
           return (t *= 2) < 1
             ? 0.5 * t * t * t * t * t
             : 0.5 * ((t -= 2) * t * t * t * t + 2);
         },
-        easeInSine: function(t) {
+        easeInSine: function (t) {
           return 1 - Math.cos((t * Math.PI) / 2);
         },
-        easeOutSine: function(t) {
+        easeOutSine: function (t) {
           return Math.sin((t * Math.PI) / 2);
         },
-        easeInOutSine: function(t) {
+        easeInOutSine: function (t) {
           return 0.5 * (1 - Math.cos(Math.PI * t));
         },
-        easeInExpo: function(t) {
+        easeInExpo: function (t) {
           return 0 === t ? 0 : Math.pow(1024, t - 1);
         },
-        easeOutExpo: function(t) {
+        easeOutExpo: function (t) {
           return 1 === t ? t : 1 - Math.pow(2, -10 * t);
         },
-        easeInOutExpo: function(t) {
+        easeInOutExpo: function (t) {
           return 0 === t
             ? 0
             : 1 === t
@@ -135,21 +135,21 @@
             ? 0.5 * Math.pow(1024, t - 1)
             : 0.5 * (2 - Math.pow(2, -10 * (t - 1)));
         },
-        easeInCirc: function(t) {
+        easeInCirc: function (t) {
           return 1 - Math.sqrt(1 - t * t);
         },
-        easeOutCirc: function(t) {
+        easeOutCirc: function (t) {
           return Math.sqrt(1 - --t * t);
         },
-        easeInOutCirc: function(t) {
+        easeInOutCirc: function (t) {
           return (t *= 2) < 1
             ? -0.5 * (Math.sqrt(1 - t * t) - 1)
             : 0.5 * (Math.sqrt(1 - (t -= 2) * t) + 1);
         },
-        easeInBounce: function(t) {
+        easeInBounce: function (t) {
           return 1 - this.easeOutBounce(1 - t);
         },
-        easeOutBounce: function(t) {
+        easeOutBounce: function (t) {
           return t < 1 / 2.75
             ? 7.5625 * t * t
             : t < 2 / 2.75
@@ -158,28 +158,28 @@
             ? 7.5625 * (t -= 2.25 / 2.75) * t + 0.9375
             : 7.5625 * (t -= 2.625 / 2.75) * t + 0.984375;
         },
-        easeInOutBounce: function(t) {
+        easeInOutBounce: function (t) {
           return t < 0.5
             ? 0.5 * this.easeInBounce(2 * t)
             : 0.5 * this.easeOutBounce(2 * t - 1) + 0.5;
-        }
+        },
       };
       (e.default = n), (t.exports = e.default);
     },
-    function(t, e, i) {
+    function (t, e, i) {
       "use strict";
       Object.defineProperty(e, "__esModule", { value: !0 }),
         (e.default = void 0);
       var n = {
-        on: function(t, e) {
+        on: function (t, e) {
           (this._eventEmitterCallbacks = this._eventEmitterCallbacks || {}),
             (this._eventEmitterCallbacks[t] =
               this._eventEmitterCallbacks[t] || []),
             this._eventEmitterCallbacks[t].push(e);
-        }
+        },
       };
       (n.addListener = n.on),
-        (n.off = function(t, e) {
+        (n.off = function (t, e) {
           if (
             ((this._eventEmitterCallbacks = this._eventEmitterCallbacks || {}),
             t in this._eventEmitterCallbacks)
@@ -189,7 +189,7 @@
           }
         }),
         (n.removeListener = n.off),
-        (n.emit = function(t, e) {
+        (n.emit = function (t, e) {
           if (
             ((this._eventEmitterCallbacks = this._eventEmitterCallbacks || {}),
             t in this._eventEmitterCallbacks)
@@ -222,7 +222,7 @@
       var s = n;
       (e.default = s), (t.exports = e.default);
     },
-    function(t, e, i) {
+    function (t, e, i) {
       "use strict";
       Object.defineProperty(e, "__esModule", { value: !0 }),
         (e.default = void 0);
@@ -240,23 +240,23 @@
             Object.defineProperty(t, n.key, n);
         }
       }
-      var o = (function() {
+      var o = (function () {
         function t(e, i) {
           var s = this;
-          !(function(t, e) {
+          !(function (t, e) {
             if (!(t instanceof e))
               throw new TypeError("Cannot call a class as a function");
           })(this, t),
-            (function(t, e, i) {
+            (function (t, e, i) {
               e in t
                 ? Object.defineProperty(t, e, {
                     value: i,
                     enumerable: !0,
                     configurable: !0,
-                    writable: !0
+                    writable: !0,
                   })
                 : (t[e] = i);
-            })(this, "_onVisibilityChange", function() {
+            })(this, "_onVisibilityChange", function () {
               document.hidden ? s.pause() : s.resume();
             }),
             (this.el = e),
@@ -280,7 +280,7 @@
                 repeat: 0,
                 longestDuration: 0,
                 log: !0,
-                offset: this.el.getBoundingClientRect()
+                offset: this.el.getBoundingClientRect(),
               },
               i,
               {}
@@ -298,12 +298,12 @@
             );
         }
         return (
-          (function(t, e, i) {
+          (function (t, e, i) {
             e && a(t.prototype, e), i && a(t, i);
           })(t, [
             {
               key: "_generatePaths",
-              value: function() {
+              value: function () {
                 var t;
                 t = Boolean(this.el.dataset.llpComposed)
                   ? this.el.querySelectorAll("[data-llp-id]")
@@ -312,11 +312,11 @@
                   var i = { el: t[e] };
                   this.__paths.push(i);
                 }
-              }
+              },
             },
             {
               key: "_uncomposed",
-              value: function() {
+              value: function () {
                 var t,
                   e = this.el.querySelectorAll(
                     "path, polygon, circle, ellipse, polyline, line, rect"
@@ -336,42 +336,42 @@
                     ),
                   e
                 );
-              }
+              },
             },
             {
               key: "paint",
-              value: function(t) {
+              value: function (t) {
                 Object.assign(this.config, t),
                   this._updateDuration(),
                   this.erase(),
                   this._paint(),
                   this.emit("start");
-              }
+              },
             },
             {
               key: "pause",
-              value: function() {
+              value: function () {
                 this.config && (this.config.paused = !0),
                   cancelAnimationFrame(this.__raf),
                   this.emit("pause");
-              }
+              },
             },
             {
               key: "resume",
-              value: function() {
+              value: function () {
                 var t = this;
                 this.config &&
                   this.config.paused &&
-                  (requestAnimationFrame(function() {
+                  (requestAnimationFrame(function () {
                     t.adjustStartTime();
                   }),
                   (this.config.paused = !1),
                   this.emit("resume"));
-              }
+              },
             },
             {
               key: "erase",
-              value: function() {
+              value: function () {
                 (this.config.startTime = null),
                   (this.config.elapsedTime = null),
                   cancelAnimationFrame(this.__raf),
@@ -384,17 +384,17 @@
                     (e.onStrokeStartDone = !1);
                 }
                 this.emit("erase");
-              }
+              },
             },
             {
               key: "destroy",
-              value: function() {
+              value: function () {
                 (this.config = null), this.el.remove(), (this.el = null);
-              }
+              },
             },
             {
               key: "set",
-              value: function(t, e) {
+              value: function (t, e) {
                 switch (t) {
                   case "progress":
                     this._setProgress(e);
@@ -415,23 +415,23 @@
                     this.config.log &&
                       console.log("property " + t + " can not be set");
                 }
-              }
+              },
             },
             {
               key: "_setRepeat",
-              value: function(t) {
+              value: function (t) {
                 this.config.repeat = t;
-              }
+              },
             },
             {
               key: "_setEase",
-              value: function(t) {
+              value: function (t) {
                 this.config.ease = t;
-              }
+              },
             },
             {
               key: "_setProgress",
-              value: function(t) {
+              value: function (t) {
                 this.pause(),
                   (this.config.progress = this._getProgress(
                     t,
@@ -440,23 +440,23 @@
                   this._updatePaths(),
                   (this.config.elapsedTime =
                     this.config.progress * this.config.totalDuration);
-              }
+              },
             },
             {
               key: "_setDelay",
-              value: function(t) {
+              value: function (t) {
                 (this.config.delay = t), this._updateDuration();
-              }
+              },
             },
             {
               key: "_setReverse",
-              value: function(t) {
+              value: function (t) {
                 (this.config.reverse = t), this._updateDuration();
-              }
+              },
             },
             {
               key: "_updateDuration",
-              value: function() {
+              value: function () {
                 var t = this._getTotalDuration(),
                   e = this._getLongestDuration();
                 (this.config.totalDuration = this.config.drawSequential
@@ -464,11 +464,11 @@
                   : e),
                   (this.config.totalDuration += this.config.delay),
                   this._calcPathDurations();
-              }
+              },
             },
             {
               key: "_calcPathDurations",
-              value: function() {
+              value: function () {
                 for (var t = 0; t < this.__paths.length; t++) {
                   var e = this.__paths[t],
                     i = void 0;
@@ -485,17 +485,17 @@
                     (e.durationProgress =
                       e.duration / this.config.totalDuration);
                 }
-              }
+              },
             },
             {
               key: "get",
-              value: function() {
+              value: function () {
                 return this.config;
-              }
+              },
             },
             {
               key: "resize",
-              value: function() {
+              value: function () {
                 this.config.offset = this.el.getBoundingClientRect();
                 for (var t = 0; t < this.__paths.length; t++) {
                   var e = this.__paths[t];
@@ -503,11 +503,11 @@
                     (e.positions = this._getPathPoints(e.el, e.length)),
                     this._updatePosition(e);
                 }
-              }
+              },
             },
             {
               key: "_parseDataAttrs",
-              value: function() {
+              value: function () {
                 for (var t = 0; t < this.__paths.length; t++) {
                   var e = this.__paths[t];
                   (e.id = e.el.dataset.llpId),
@@ -520,11 +520,11 @@
                     (e.duration *= this.config.speedMultiplier),
                     this._setStyleAttrs(e);
                 }
-              }
+              },
             },
             {
               key: "_setStyleAttrs",
-              value: function(t) {
+              value: function (t) {
                 (t.strokeColor =
                   t.el.dataset.llpStrokeColor || this.config.strokeColor),
                   t.strokeColor && (t.el.style.stroke = t.strokeColor),
@@ -541,11 +541,11 @@
                   (t.strokeJoin =
                     t.el.dataset.llpStrokeJoin || this.config.strokeJoin),
                   t.strokeJoin && (t.el.style.strokeLinejoin = t.strokeJoin);
-              }
+              },
             },
             {
               key: "_setupPaths",
-              value: function() {
+              value: function () {
                 for (var t = 0; t < this.__paths.length; t++) {
                   var e = this.__paths[t];
                   (e.index = t),
@@ -559,22 +559,22 @@
                     (e.onStrokeStartDone = !1),
                     (e.onStrokeCompleteDone = !1);
                 }
-              }
+              },
             },
             {
               key: "adjustStartTime",
-              value: function() {
+              value: function () {
                 var t = this,
                   e = performance.now();
                 (this.config.startTime = e - this.config.elapsedTime),
-                  requestAnimationFrame(function() {
+                  requestAnimationFrame(function () {
                     t._paint();
                   });
-              }
+              },
             },
             {
               key: "_paint",
-              value: function() {
+              value: function () {
                 var t = this;
                 if (this.config) {
                   this.config.startTime ||
@@ -591,7 +591,7 @@
                     this._updatePaths(),
                     this.config.linearProgress >= 0 &&
                     this.config.linearProgress <= 1
-                      ? (this.__raf = requestAnimationFrame(function() {
+                      ? (this.__raf = requestAnimationFrame(function () {
                           t._paint();
                         }))
                       : this.config.repeat > 0
@@ -600,11 +600,11 @@
                       ? this.paint()
                       : this.emit("complete");
                 }
-              }
+              },
             },
             {
               key: "_updatePaths",
-              value: function() {
+              value: function () {
                 for (var t = 0; t < this.__paths.length; t++) {
                   var e = this.__paths[t],
                     i = this._getElapsedProgress(e);
@@ -613,11 +613,11 @@
                     this._updatePosition(e),
                     this._updateStrokeCallbacks(e);
                 }
-              }
+              },
             },
             {
               key: "_getElapsedProgress",
-              value: function(t) {
+              value: function (t) {
                 var e;
                 return (
                   this.config.progress >= t.startProgress &&
@@ -631,18 +631,18 @@
                     : this.config.progress <= t.startProgress && (e = 0),
                   e
                 );
-              }
+              },
             },
             {
               key: "_getProgress",
-              value: function(t, e) {
+              value: function (t, e) {
                 var i = t;
                 return e && (i = s.default[e](t)), i;
-              }
+              },
             },
             {
               key: "_setLine",
-              value: function(t) {
+              value: function (t) {
                 var e = t.el,
                   i = t.progress * t.length;
                 t.reverse
@@ -650,11 +650,11 @@
                   : this.config.reverse
                   ? (e.style.strokeDashoffset = -t.length + i)
                   : (e.style.strokeDashoffset = t.length - i);
-              }
+              },
             },
             {
               key: "_updateStrokeCallbacks",
-              value: function(t) {
+              value: function (t) {
                 1 === t.progress
                   ? t.onStrokeCompleteDone ||
                     ((t.onStrokeCompleteDone = !0),
@@ -667,89 +667,89 @@
                       (t.onStrokeStartDone = !0)),
                     this.emit("update:" + t.id, t),
                     this.emit("update:all", t));
-              }
+              },
             },
             {
               key: "_updatePosition",
-              value: function(t) {
+              value: function (t) {
                 var e = Math.round(t.progress * (t.length - 1)),
                   i = t.positions[e];
                 i &&
                   (t.position = {
                     x: this.config.offset.left + i.x,
-                    y: this.config.offset.top + i.y
+                    y: this.config.offset.top + i.y,
                   });
-              }
+              },
             },
             {
               key: "_getTotalDuration",
-              value: function() {
+              value: function () {
                 for (var t = 0, e = this.__paths, i = 0; i < e.length; i++) {
                   var n = e[i].delay || 0;
                   t += e[i].duration + n;
                 }
                 return t;
-              }
+              },
             },
             {
               key: "_getLongestDuration",
-              value: function() {
+              value: function () {
                 for (var t = 0, e = this.__paths, i = 0; i < e.length; i++) {
                   var n = e[i].delay + e[i].duration;
                   n > t && (t = n);
                 }
                 return t;
-              }
+              },
             },
             {
               key: "_getPathLength",
-              value: function(t) {
+              value: function (t) {
                 return this._getTotalLength(t);
-              }
+              },
             },
             {
               key: "_getDistance",
-              value: function(t, e) {
+              value: function (t, e) {
                 return Math.sqrt(
                   Math.pow(e.x - t.x, 2) + Math.pow(e.y - t.y, 2)
                 );
-              }
+              },
             },
             {
               key: "_getCircleLength",
-              value: function(t) {
+              value: function (t) {
                 return 2 * Math.PI * t.getAttribute("r");
-              }
+              },
             },
             {
               key: "_getEllipseLength",
-              value: function(t) {
+              value: function (t) {
                 var e = parseInt(t.getAttribute("rx"), 1),
                   i = parseInt(t.getAttribute("ry"), 1),
                   n = Math.pow(e - i, 2) / Math.pow(e + i, 2);
                 return Math.PI * (e + i) * (1 + (3 * n) / Math.sqrt(4 - 3 * n));
-              }
+              },
             },
             {
               key: "_getRectLength",
-              value: function(t) {
+              value: function (t) {
                 return (
                   2 * t.getAttribute("width") + 2 * t.getAttribute("height")
                 );
-              }
+              },
             },
             {
               key: "_getLineLength",
-              value: function(t) {
+              value: function (t) {
                 return this._getDistance(
                   { x: t.getAttribute("x1"), y: t.getAttribute("y1") },
                   { x: t.getAttribute("x2"), y: t.getAttribute("y2") }
                 );
-              }
+              },
             },
             {
               key: "_getPolylineLength",
-              value: function(t) {
+              value: function (t) {
                 for (
                   var e, i = t.points, n = 0, s = 0;
                   s < i.numberOfItems;
@@ -759,11 +759,11 @@
                   s > 0 && (n += this._getDistance(e, r)), (e = r);
                 }
                 return n;
-              }
+              },
             },
             {
               key: "_getPolygonLength",
-              value: function(t) {
+              value: function (t) {
                 var e = t.points;
                 return (
                   this._getPolylineLength(t) +
@@ -772,11 +772,11 @@
                     e.getItem(0)
                   )
                 );
-              }
+              },
             },
             {
               key: "_getTotalLength",
-              value: function(t) {
+              value: function (t) {
                 var e;
                 switch (t.tagName.toLowerCase()) {
                   case "circle":
@@ -798,31 +798,31 @@
                     e = t.getTotalLength();
                 }
                 return e;
-              }
+              },
             },
             {
               key: "_getPathPoints",
-              value: function(t, e) {
+              value: function (t, e) {
                 for (var i = [], n = 0; n < e; n++) {
                   var s = t.getPointAtLength(n);
                   i.push({ x: s.x, y: s.y });
                 }
                 return i;
-              }
+              },
             },
             {
               key: "_getStrokeDashArray",
-              value: function(t, e) {
+              value: function (t, e) {
                 return t.strokeDash
                   ? this._getStrokeDashString(t.strokeDash, e)
                   : this.config.strokeDash
                   ? this._getStrokeDashString(this.config.strokeDash, e)
                   : e + " " + e;
-              }
+              },
             },
             {
               key: "_getStrokeDashString",
-              value: function(t, e) {
+              value: function (t, e) {
                 for (
                   var i, n, s = "", r = t.split(","), a = 0, o = r.length - 1;
                   o >= 0;
@@ -832,8 +832,8 @@
                 n = e - (i = Math.floor(e / a)) * a;
                 for (var l = 0; l < i; l++) s += t + ", ";
                 return (s + n + ", " + (e + 2)).split(",").join("px,") + "px";
-              }
-            }
+              },
+            },
           ]),
           t
         );
@@ -841,7 +841,7 @@
       window.LazyLinePainter = o;
       var l = o;
       (e.default = l), (t.exports = e.default);
-    }
+    },
   ]);
 });
 //# sourceMappingURL=lazy-line-painter-1.9.6.min.js.map

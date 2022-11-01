@@ -14,7 +14,7 @@ const TextAPI = "iyd4tPWAiXa";
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://bowoot-test.firebaseio.com"
+  databaseURL: "https://bowoot-test.firebaseio.com",
 });
 
 // admin.initializeApp({
@@ -25,9 +25,11 @@ admin.initializeApp({
 var db = admin.database();
 
 exports.createNewUser = functions.https.onRequest((request, response) => {
-  cors(request, response, function() {
+  cors(request, response, function () {
     request.body =
-      typeof request.body == "string" ? JSON.parse(request.body) : request.body;
+      typeof request.body === "string"
+        ? JSON.parse(request.body)
+        : request.body;
     var email = request.body.email;
     var pass = request.body.password;
     let token = request.body.token;
@@ -38,16 +40,16 @@ exports.createNewUser = functions.https.onRequest((request, response) => {
         email: email,
         emailVerified: true,
         password: pass,
-        phoneNumber: request.body.phoneNumber
+        phoneNumber: request.body.phoneNumber,
       })
-      .then(function(userRecord) {
+      .then(function (userRecord) {
         if (token === "isUser") {
           admin
             .database()
             .ref("users/")
             .child(userRecord.uid)
             .set({
-              [token]: true
+              [token]: true,
             });
         }
         if (token === "isAdmin") {
@@ -56,7 +58,7 @@ exports.createNewUser = functions.https.onRequest((request, response) => {
             .ref("admin/")
             .child(userRecord.uid)
             .set({
-              [token]: true
+              [token]: true,
             });
         }
         if (token === "isTrainer") {
@@ -65,14 +67,14 @@ exports.createNewUser = functions.https.onRequest((request, response) => {
             .ref("trainers/")
             .child(userRecord.uid)
             .set({
-              [token]: true
+              [token]: true,
             });
         }
         console.log(userRecord);
         response.status(200).send(userRecord);
         return 0;
       })
-      .catch(function(error) {
+      .catch(function (error) {
         console.log(error);
         response.status(500).send({ error: error });
         return 0;
@@ -82,7 +84,7 @@ exports.createNewUser = functions.https.onRequest((request, response) => {
 });
 
 exports.getTypeOfUser = functions.https.onRequest((request, response) => {
-  cors(request, response, function() {
+  cors(request, response, function () {
     request.body =
       typeof request.body === "string"
         ? JSON.parse(request.body)
@@ -93,18 +95,18 @@ exports.getTypeOfUser = functions.https.onRequest((request, response) => {
       .database()
       .ref()
       .once("value")
-      .then(snapshot => {
+      .then((snapshot) => {
         let reference = snapshot.val();
         console.log(reference);
         if (reference) {
-          Object.keys(reference).map(i => {
+          Object.keys(reference).map((i) => {
             console.log(i);
             admin
               .database()
               .ref(i)
               .child(uid)
               .once("value")
-              .then(data => {
+              .then((data) => {
                 if (data.hasChild("isUser")) {
                   response.status(200).send({ result: "User" });
                 } else if (data.hasChild("isTrainer")) {
@@ -114,30 +116,30 @@ exports.getTypeOfUser = functions.https.onRequest((request, response) => {
                 }
                 db.ref("users/")
                   .once("value")
-                  .then(function(userSnapshot) {
+                  .then(function (userSnapshot) {
                     var users = userSnapshot.val();
                     var tokenArray = _.compact(_.pluck(users || {}, "token"));
                     var msgObj = {
                       title: "New User created",
                       body: "Blah blah blah",
-                      tag: "USER_ADDED"
+                      tag: "USER_ADDED",
                     };
                     sendNotfications(tokenArray, msgObj);
                     return 0;
                   })
-                  .catch(function(error) {
+                  .catch(function (error) {
                     return error;
                   });
                 return response;
               })
-              .catch(error => {
+              .catch((error) => {
                 console.log(error);
               });
           });
         }
         return 0;
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(err);
         response.status(400).send(error);
       });
@@ -148,7 +150,7 @@ function sendNotfications(tokenArray, msgObj) {
   var message = {
     options: {
       ttl: 3600 * 1000, // 1 hour in milliseconds
-      priority: "high"
+      priority: "high",
     },
     payload: {
       notification: {
@@ -156,9 +158,9 @@ function sendNotfications(tokenArray, msgObj) {
         body: msgObj.body,
         tag: msgObj.tag,
         icon: "stock_ticker_update",
-        color: "#f45342"
-      }
-    }
+        color: "#f45342",
+      },
+    },
   };
   if (tokenArray.length) {
     admin
@@ -168,7 +170,7 @@ function sendNotfications(tokenArray, msgObj) {
         console.log("NOTIFICATIONS SENT SUCCESSFULLY");
         return 0;
       })
-      .catch(err => {
+      .catch((err) => {
         console.log("ERROR: ", err);
       });
   }
@@ -176,7 +178,7 @@ function sendNotfications(tokenArray, msgObj) {
 
 exports.sendMail = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
-    typeof req.body == "string" ? JSON.parse(req.body) : req.body;
+    typeof req.body === "string" ? JSON.parse(req.body) : req.body;
     const dest = req.body.dest;
     const mailOptions = {
       from: "Your Account Name <yourgmailaccount@gmail.com>", // Something like: Jane Doe <janedoe@gmail.com>
@@ -185,7 +187,7 @@ exports.sendMail = functions.https.onRequest((req, res) => {
       html: `<p style="font-size: 16px;">Pickle Riiiiiiiiiiiiiiiick!!</p>
                 <br />
                 <img src="https://images.prod.meredith.com/product/fc8754735c8a9b4aebb786278e7265a5/1538025388228/l/rick-and-morty-pickle-rick-sticker" />
-            ` // email content in HTML
+            `, // email content in HTML
     };
 
     // returning result
@@ -199,21 +201,23 @@ exports.sendMail = functions.https.onRequest((req, res) => {
 });
 
 exports.checkUserExists = functions.https.onRequest((request, response) => {
-  cors(request, response, function() {
+  cors(request, response, function () {
     request.body =
-      typeof request.body == "string" ? JSON.parse(request.body) : request.body;
+      typeof request.body === "string"
+        ? JSON.parse(request.body)
+        : request.body;
     var email = request.body.email;
     admin
       .auth()
       .getUserByEmail(email)
-      .then(snap => {
+      .then((snap) => {
         console.log(snap);
         if (snap) {
           response.status(200).send({ status: true });
         }
         return 0;
       })
-      .catch(error => {
+      .catch((error) => {
         response.status(500).send({ status: false });
         return error;
       });
@@ -221,22 +225,24 @@ exports.checkUserExists = functions.https.onRequest((request, response) => {
 });
 
 exports.checkPhoneExists = functions.https.onRequest((request, response) => {
-  cors(request, response, function() {
+  cors(request, response, function () {
     request.body =
-      typeof request.body == "string" ? JSON.parse(request.body) : request.body;
+      typeof request.body === "string"
+        ? JSON.parse(request.body)
+        : request.body;
     var phone = request.body.phone;
 
     admin
       .auth()
       .getUserByPhoneNumber(phone)
-      .then(snap => {
+      .then((snap) => {
         console.log(snap);
         if (snap) {
           response.status(200).send({ status: true });
         }
         return 0;
       })
-      .catch(error => {
+      .catch((error) => {
         response.status(500).send({ status: false });
         return error;
       });

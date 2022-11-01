@@ -1,6 +1,8 @@
 {
   "projects": {
-    "default": "bowoot-be754",
+    "default": "bowoot-test",
     "staging": "bowoot-test"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }

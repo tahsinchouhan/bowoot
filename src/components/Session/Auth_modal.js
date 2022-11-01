@@ -1,11 +1,11 @@
-import React from "react";
-import { withStyles } from "@material-ui/core/styles";
-import ButtonBase from "@material-ui/core/ButtonBase";
-import Modal from "@material-ui/core/Modal";
-import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
-import CircularProgress from "@material-ui/core/CircularProgress";
 import Button from "@material-ui/core/Button";
+import ButtonBase from "@material-ui/core/ButtonBase";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import Modal from "@material-ui/core/Modal";
+import { withStyles } from "@material-ui/core/styles";
 import firebase from "firebase";
+import React from "react";
+import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
 
 class AuthModal extends React.Component {
   constructor(props) {
@@ -23,7 +23,7 @@ class AuthModal extends React.Component {
       showPhoneNoLoader: false,
       showConfirmationLoader: false,
       showButtonLoader: false,
-      showOTPPrompt: false
+      showOTPPrompt: false,
     };
     this.state = this.defaultState;
   }
@@ -34,14 +34,14 @@ class AuthModal extends React.Component {
   }
 
   componentDidMount() {
-    firebase.auth().onAuthStateChanged(function(user) {
+    firebase.auth().onAuthStateChanged(function (user) {
       console.log(user);
     });
   }
 
   onPhoneAuth(type) {
     this.setState({ showButtonLoader: true });
-    if (type == "LOGIN") {
+    if (type === "LOGIN") {
       this.onLoginWithPhone();
     } else {
       this.onSignUpWithPhone();
@@ -49,7 +49,7 @@ class AuthModal extends React.Component {
   }
 
   resendSMS(type) {
-    if (type == "SIGNUP") {
+    if (type === "SIGNUP") {
       this.onSignUpWithPhone();
     } else {
       this.onLoginWithPhone();
@@ -62,15 +62,15 @@ class AuthModal extends React.Component {
     firebase
       .auth()
       .signInWithPhoneNumber("+91" + phoneNumber, window.recaptchaVerifier)
-      .then(confirmationResult => {
+      .then((confirmationResult) => {
         this.confirmationResult = confirmationResult;
         this.setState({
           showOTPPrompt: true,
           showPhoneNoLoader: false,
-          showButtonLoader: false
+          showButtonLoader: false,
         });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
   }
@@ -87,12 +87,12 @@ class AuthModal extends React.Component {
         firebase
           .auth()
           .signInWithCredential(credential)
-          .then(result => {
+          .then((result) => {
             this.onSignUpComplete(result, type);
           })
-          .catch(err => {
+          .catch((err) => {
             console.log(err);
-            if (err.code == "auth/invalid-verification-code") {
+            if (err.code === "auth/invalid-verification-code") {
               console.log(err);
             }
             this.setState({ showConfirmationLoader: false });
@@ -108,15 +108,15 @@ class AuthModal extends React.Component {
     firebase.auth().languageCode = "en";
     provider.setCustomParameters({
       login_hint: "user@example.com",
-      prompt: "select_account"
+      prompt: "select_account",
     });
     firebase
       .auth()
       .signInWithPopup(provider)
-      .then(result => {
+      .then((result) => {
         console.log(result);
       })
-      .catch(function(error) {
+      .catch(function (error) {
         console.log(error);
       });
   }
@@ -136,7 +136,7 @@ class AuthModal extends React.Component {
           <CircularProgress className={classes.progress} />
           <div className={classes.otpLoaderText}>
             {" "}
-            {type == "SIGNUP" ? "Regestering" : "Logging In"}...{" "}
+            {type === "SIGNUP" ? "Regestering" : "Logging In"}...{" "}
           </div>
         </div>
       );
@@ -146,12 +146,12 @@ class AuthModal extends React.Component {
           <ValidatorForm
             ref="form1"
             onSubmit={this.onOTPConfirm.bind(this, type)}
-            onError={errors => {}}
+            onError={(errors) => {}}
             instantValidate={false}
           >
             <div className={classes.textFieldStyle}>
               <TextValidator
-                onChange={event => {
+                onChange={(event) => {
                   this.handleChange("otpCode", event);
                 }}
                 label="OTP Code"
@@ -162,12 +162,12 @@ class AuthModal extends React.Component {
                 validators={[
                   "required",
                   "minStringLength:6",
-                  "maxStringLength:6"
+                  "maxStringLength:6",
                 ]}
                 errorMessages={[
                   "OTP is required",
                   "OTP should have 6 digit",
-                  "OTP should have 6 digit"
+                  "OTP should have 6 digit",
                 ]}
               />
             </div>
@@ -202,12 +202,12 @@ class AuthModal extends React.Component {
           <ValidatorForm
             ref="form1"
             onSubmit={this.onPhoneAuth.bind(this, type)}
-            onError={errors => {}}
+            onError={(errors) => {}}
             instantValidate={false}
           >
             <div className={classes.textFieldStyle}>
               <TextValidator
-                onChange={event => {
+                onChange={(event) => {
                   this.handleChange("mobileNo", event);
                 }}
                 label="Phone Number"
@@ -218,12 +218,12 @@ class AuthModal extends React.Component {
                 validators={[
                   "required",
                   "minStringLength:10",
-                  "maxStringLength:10"
+                  "maxStringLength:10",
                 ]}
                 errorMessages={[
                   "Phone number is required",
                   "Phone number is invalid",
-                  "Phone number is invalid"
+                  "Phone number is invalid",
                 ]}
                 variant="outlined"
               />
@@ -242,7 +242,7 @@ class AuthModal extends React.Component {
                   <CircularProgress
                     style={{ color: "white", width: 30, height: 30 }}
                   />
-                ) : type == "LOGIN" ? (
+                ) : type === "LOGIN" ? (
                   "Login"
                 ) : (
                   "Sign Up"
@@ -259,7 +259,7 @@ class AuthModal extends React.Component {
           flex: 1,
           display: "flex",
           flexDirection: "column",
-          padding: "20px"
+          padding: "20px",
         }}
       >
         {content}
@@ -270,7 +270,7 @@ class AuthModal extends React.Component {
           >
             <div className={classes.googleButtonText}>
               {" "}
-              {type == "LOGIN" ? "Login" : "Sign Up"} With Google{" "}
+              {type === "LOGIN" ? "Login" : "Sign Up"} With Google{" "}
             </div>
           </ButtonBase>
         </div>
@@ -317,7 +317,7 @@ class AuthModal extends React.Component {
           style={{
             padding: "20px 15px 15px 15px",
             marginTop: 10,
-            borderTop: "2px dashed #ddd"
+            borderTop: "2px dashed #ddd",
           }}
         >
           <div className={classes.footerSection}>
@@ -339,7 +339,7 @@ class AuthModal extends React.Component {
           style={{
             padding: "20px 15px 15px 15px",
             marginTop: 10,
-            borderTop: "2px dashed #ddd"
+            borderTop: "2px dashed #ddd",
           }}
         >
           <div className={classes.footerSection}>
@@ -364,7 +364,7 @@ class AuthModal extends React.Component {
       margin: "auto",
       display: "flex",
       flex: 1,
-      flexDirection: ""
+      flexDirection: "",
     };
   }
 
@@ -376,7 +376,7 @@ class AuthModal extends React.Component {
     this.setState({
       showLogin: !this.state.showLogin,
       otpCode: "",
-      mobileNo: ""
+      mobileNo: "",
     });
   }
 
@@ -403,7 +403,7 @@ class AuthModal extends React.Component {
         style={{
           alignItems: "center",
           justifyContent: "center",
-          display: "flex"
+          display: "flex",
         }}
         onClose={() => {
           this.onModalClose();
@@ -418,7 +418,7 @@ class AuthModal extends React.Component {
   }
 }
 
-const styles = theme => ({
+const styles = (theme) => ({
   paper: {
     position: "absolute",
     width: theme.spacing(70),
@@ -426,7 +426,7 @@ const styles = theme => ({
     padding: "10px",
     outline: "none",
     boxShadow: "0px 0px 30px 1px #8c8c8c",
-    borderRadius: 10
+    borderRadius: 10,
   },
   loginText: {
     flex: 0.5,
@@ -434,38 +434,38 @@ const styles = theme => ({
     borderLeftColor: "blue",
     borderLeftWidth: 2,
     flexDirection: "column",
-    justifyContent: "space-evenly"
+    justifyContent: "space-evenly",
   },
   loginForm: {
     flex: 0.6,
     display: "flex",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
 
   textField: {
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
-    flex: 1
+    flex: 1,
   },
   dense: {
-    marginTop: 10
+    marginTop: 10,
   },
   margin: {
-    margin: theme.spacing(1)
+    margin: theme.spacing(1),
   },
   textFieldStyle: {
     flex: 1,
-    display: "flex"
+    display: "flex",
   },
   button: {
     margin: theme.spacing(1),
-    flex: 1
+    flex: 1,
   },
   loginImage: {
     flex: 1,
     display: "flex",
-    width: "100%"
+    width: "100%",
   },
   loginType: {
     fontSize: "25px",
@@ -474,7 +474,7 @@ const styles = theme => ({
     display: "flex",
     flex: 1,
     padding: "20px 10px 0 10px",
-    color: "#666"
+    color: "#666",
   },
   modalCloseIcon: {
     top: 12,
@@ -482,75 +482,75 @@ const styles = theme => ({
     color: "#444",
     cursor: "pointer",
     fontSize: "28px !important",
-    position: "absolute"
+    position: "absolute",
   },
   googleButton: {
     boxShadow: "0 0 6px #999",
     padding: "0 5px",
     borderRadius: 4,
     height: 40,
-    backgroundColor: "white"
+    backgroundColor: "white",
   },
   googleIcon: {
     width: 30,
     height: 30,
     padding: 5,
-    backgroundColor: "white"
+    backgroundColor: "white",
   },
   googleButtonContainer: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 5
+    marginTop: 5,
   },
   googleButtonText: {
     padding: "0 10px ",
     fontSize: 16,
     color: "#4285f4",
-    fontWeight: "bold"
+    fontWeight: "bold",
   },
   footerSection: {
     alignItems: "center",
     justifyContent: "center",
-    display: "flex"
+    display: "flex",
   },
   footerLink: {
     color: "#4285f4",
     cursor: "pointer",
     padding: "0 10px",
     fontWeight: "bold",
-    textDecoration: "underline"
+    textDecoration: "underline",
   },
   otpLoaderBlock: {
     padding: 10,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    flexDirection: "column"
+    flexDirection: "column",
   },
   otpLoaderText: {
     padding: "15px 5px 5px 5px",
     fontWeight: "bold",
-    color: "#555"
+    color: "#555",
   },
   resendLink: {
     margin: 10,
     textDecoration: "underline",
     cursor: "pointer",
-    color: "blue"
+    color: "blue",
   },
   snackbar: {
     backgroundColor: "#d38400",
     color: "white",
-    padding: 10
+    padding: 10,
   },
   snackbarMessage: {
     fontSize: 19,
     fontWeight: "bold",
     padding: "0 15px",
     display: "flex",
-    alignItems: "center"
-  }
+    alignItems: "center",
+  },
 });
 
 export default withStyles(styles)(AuthModal);
