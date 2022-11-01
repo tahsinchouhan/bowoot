@@ -24,7 +24,7 @@ const devConfig = {
   measurementId: "G-RPSTRHS607",
 };
 
-const config = process.env.NODE_ENV === "production" ? prodConfig : devConfig;
+const config = process.env.NODE_ENV === "production" ? devConfig : devConfig;
 
 if (!firebase.apps.length) {
   firebase.initializeApp(config);
